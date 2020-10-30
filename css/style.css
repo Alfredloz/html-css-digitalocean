@@ -21,6 +21,9 @@ body {
 .bg_white {
   background-color: white;
 }
+.bg_white_grey{
+  background-color: #f3f5f9;
+}
 /* /utility class */
 /* header */
 /* navbar */
@@ -102,6 +105,10 @@ body {
 .login_google {
   width: 100%;
 }
+/* /jumbotron header */
+/* /header */
+/* main */
+
 /* WARNING @MEDIA QUERY */
 @media all and (min-width: 768px) and (max-width: 991px) {
   #collapsed_list1, #collapsed_list2 {
