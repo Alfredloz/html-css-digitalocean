@@ -2,6 +2,26 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+/* utility class */
+.text_white {
+  color: white;
+}
+.text_black {
+  color: black;
+}
+.text_blue {
+  color: #006AFF;
+}
+.text_grey {
+  color: #A2AABB;
+}
+.bg_grey {
+  background-color: #A2AABB;
+}
+.bg_white {
+  background-color: white;
+}
+/* /utility class */
 /* header */
 /* navbar */
 .navbar-brand {
@@ -37,8 +57,50 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header_box{
-  margin-top: 40rem;
+.bg_header > .container > .box_header{
+  margin-top: 10rem;
+}
+.bg_header > .container > .box_header > .title_header {
+  padding-top: 0;
+  background-color: inherit;
+}
+.bg_header > .container > .box_header > .title_header > h1 {
+  font-size: 4.5rem;
+  color: white;
+}
+.bg_header > .container > .box_header > .title_header p {
+  color: #BBCDFF;
+}
+.google_login {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 5rem;
+  border-radius: 1%;
+}
+.google_login  h3 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.btn_google_acount {
+  position: relative;
+}
+.google_logo {
+  position: absolute;
+  transform: translate(30%, 30%);
+}
+.create_account {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #3A8AFF;
+  color: white;
+  border: 0;
+}
+.create_account:hover, .login_google:hover {
+  background-color: #3A8AFF;
+  color: white;
+}
+.login_google {
+  width: 100%;
 }
 /* WARNING @MEDIA QUERY */
 @media all and (min-width: 768px) and (max-width: 991px) {
