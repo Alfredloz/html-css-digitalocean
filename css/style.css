@@ -257,8 +257,6 @@ footer ul [class*="fab"] {
   border: 2px solid white;
 }
 #bot_footer .text_bot {
-  position: absolute;
-  transform: translate(70%, -60%);
   width: 15rem;
   background-color: white;
   margin: 1rem;
