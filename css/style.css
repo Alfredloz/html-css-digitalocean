@@ -6,9 +6,6 @@ body {
 .text_white {
   color: white;
 }
-.text_black {
-  color: black;
-}
 .text_blue {
   color: #25aaff;
 }
@@ -17,9 +14,6 @@ body {
 }
 .bg_darkblue {
   background-color: #031C4E;
-}
-.bg_grey {
-  background-color: #A2AABB;
 }
 .bg_white {
   background-color: white;
@@ -264,7 +258,6 @@ footer ul [class*="fab"] {
 }
 /* /footer */
 /* WARNING @MEDIA QUERY */
-
 @media all and (min-width: 768px) and (max-width: 991px) {
   #collapsed_list1, #collapsed_list2 {
     display: none;
