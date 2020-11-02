@@ -38,6 +38,9 @@ body {
 .pd_box {
   padding: 2rem 3rem;
 }
+.ps_relative {
+  position: relative;
+}
 /* /utility class */
 /* header */
 /* navbar */
@@ -159,20 +162,26 @@ max-height: 100px;
 margin-bottom: 3.5rem;
 }
 /* /optimize config scetion */
-/* carousel1 section */
-.carousel_1 [class*="col-"]:nth-child(2) img {
+/* carousels sections */
+.carousels_section {
+  padding: 3rem 0;
+}
+.carousels [class*="col-"]:nth-child(2) img {
   max-width: 60rem;
   display: block;
   margin: auto;
 }
-.carousel_1 [class*="col-"]:first-child i {
+.carousels [class*="col-"]:first-child i {
   font-size: 4rem;
   position: absolute;
   right: 0;
+  transform: translateY(400%);
 }
-.carousel_1 [class*="col-"]:last-child i {
+.carousels [class*="col-"]:last-child i {
   font-size: 4rem;
+  position: absolute;
   left: 0;
+  transform: translateY(400%);
 }
 .carousel_spheres .btn {
  width: 1rem;
@@ -240,23 +249,22 @@ margin-bottom: 3.5rem;
   .container .list-group {
     padding-left: 0;
   }
-  .carousel_1  i {
+  .carousels  i {
     display: none;
   }
 }
 @media all and (max-width: 768px) {
   /* carousel 1 responsive smartphone */
-  .carousel_1  i {
+  .carousels  i {
     display: none;
   }
-  .carousel_1 img {
+  .carousels img {
     max-height: 30rem;
     margin: 0;
   }
   .carousel_spheres .btn {
     margin: 5rem 0.8rem;
   }
-  /* NOTE c'è da sistemare le frecce del carousel!! */
   /* /carousel 1 responsive smartphone */
   /* blue connection section */
   .cities_connect span {
