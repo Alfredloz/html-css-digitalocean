@@ -10,10 +10,13 @@ body {
   color: black;
 }
 .text_blue {
-  color: #006AFF;
+  color: #25aaff;
 }
 .text_grey {
   color: #A2AABB;
+}
+.bg_darkblue {
+  background-color: #031C4E;
 }
 .bg_grey {
   background-color: #A2AABB;
@@ -23,6 +26,17 @@ body {
 }
 .bg_white_grey{
   background-color: #f3f5f9;
+}
+.bg_blue {
+ background-color: #006AFF;
+}
+.bg_gradiant_blue {
+  background: #396afc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2948ff, #396afc);
+  background: linear-gradient(to right, #2948ff, #396afc)
+}
+.pd_box {
+  padding: 2rem 3rem;
 }
 /* /utility class */
 /* header */
@@ -108,8 +122,110 @@ body {
 /* /jumbotron header */
 /* /header */
 /* main */
+/* sponsor section */
+.sponsor h4 {
+  padding: 4rem 0;
+}
+.sponsor img {
+max-height: 100px;
+}
+/* /sponsor section */
+/* optimisize config section */
+.config_opt {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.config_opt [class*="col-"] img {
+  margin: 1rem 0;
+  max-width: 3.5rem;
+}
+.config_opt h4 {
+  font-weight: bold;
+}
+.config_opt [class*="col-"]:last-child p {
+  margin-bottom: 5rem;
+}
+.config_opt  [class*="col-"]:nth-child(5) img {
+  max-width:6rem;
+}
+.container .list-group > li {
+  border: 0;
+  border-left: 1px solid #A2AABB;
+  border-radius: 0;
+}
+.container .list-group {
+  padding-left: 20%;
+  margin-top: 1rem;
+margin-bottom: 3.5rem;
+}
+/* /optimize config scetion */
+/* carousel1 section */
+.carousel_1 [class*="col-"]:nth-child(2) img {
+  max-width: 60rem;
+  display: block;
+  margin: auto;
+}
+.carousel_1 [class*="col-"]:first-child i {
+  font-size: 4rem;
+  position: absolute;
+  right: 0;
+}
+.carousel_1 [class*="col-"]:last-child i {
+  font-size: 4rem;
+  left: 0;
+}
+.carousel_spheres .btn {
+ width: 1rem;
+ height: 1rem;
+ padding: 0;
+ border-radius: 50%;
+ margin: 0.8rem;
+}
+/* customers service */
+.customers_service h2, .customers_service img {
+  margin: 2rem 0;
+}
+ .customers_service  .customer_link {
+  margin: 4rem 0;
+}
+.customer_link a:hover {
+  text-decoration: none;
+}
+/* /customers service */
+/* connection blue section */
 
+.connection h2 {
+  font-size: 4rem;
+  padding: 4rem 0;
+}
+.cities_connect [class*="col-"] {
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+}
+.last_row [class*="col-"] {
+  border: 0;
+}
+
+.cities_connect a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* start now section */
+.jumbotron.bg_gradiant_blue {
+  margin-bottom: 0;
+}
+.jumbotron.bg_gradiant_blue h2 {
+  font-size: 4rem;
+  padding: 1rem 0;
+  text-shadow: 1px 1px grey;
+}
+.jumbotron.bg_gradiant_blue .btn {
+  display: block;
+  width: 15rem;
+  margin: auto;
+}
 /* WARNING @MEDIA QUERY */
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   #collapsed_list1, #collapsed_list2 {
     display: none;
@@ -118,5 +234,32 @@ body {
     display: block;
     position: absolute;
     right: 0;
+  }
+}
+@media all and (max-width: 991px) {
+  .container .list-group {
+    padding-left: 0;
+  }
+  .carousel_1  i {
+    display: none;
+  }
+}
+@media all and (max-width: 768px) {
+  /* carousel 1 responsive smartphone */
+  .carousel_1  i {
+    display: none;
+  }
+  .carousel_1 img {
+    max-height: 30rem;
+    margin: 0;
+  }
+  .carousel_spheres .btn {
+    margin: 5rem 0.8rem;
+  }
+  /* NOTE c'è da sistemare le frecce del carousel!! */
+  /* /carousel 1 responsive smartphone */
+  /* blue connection section */
+  .cities_connect span {
+    font-size: 1.3rem;
   }
 }
